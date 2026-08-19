@@ -1,0 +1,3 @@
+# Homework 02 — Tooling Setup
+
+This homework practices setting up a reproducible Python development environment and project structure. It includes creating an isolated Python environment, organizing project folders, managing environment variables with `.env`, using a reusable configuration helper, verifying Jupyter and NumPy functionality, freezing Python dependencies in `requirements.txt`, and using Git for version control. The real `.env` file is excluded from Git to prevent secrets from being committed.

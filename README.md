@@ -77,3 +77,19 @@ The repository contains:
 - `docs/` → stakeholder-facing documentation
 
 The repository will be updated as each stage of the project lifecycle is completed.
+
+## Data Storage
+
+The project uses separate folders for raw and processed data:
+
+- `data/raw/` → raw datasets stored as CSV files
+- `data/processed/` → processed datasets stored as Parquet files
+
+CSV is used for raw data because it is portable and easy to inspect. Parquet is used for processed data because it is more storage-efficient and preserves data types.
+
+Storage paths are configured through environment variables:
+
+- `DATA_DIR_RAW=data/raw`
+- `DATA_DIR_PROCESSED=data/processed`
+
+The notebook reads these paths from `.env` and uses reusable `write_df()` and `read_df()` functions to handle CSV and Parquet files.

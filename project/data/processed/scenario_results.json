@@ -1,0 +1,30 @@
+[
+  {
+    "scenario":"median_impute_winsor",
+    "n":250,
+    "mae":0.0074932725,
+    "rmse":0.0099557719,
+    "delta_mae":0.0
+  },
+  {
+    "scenario":"mean_impute_winsor",
+    "n":250,
+    "mae":0.0074931304,
+    "rmse":0.0099555425,
+    "delta_mae":-0.0000001422
+  },
+  {
+    "scenario":"drop_winsor",
+    "n":238,
+    "mae":0.0071999618,
+    "rmse":0.009324011,
+    "delta_mae":-0.0002933107
+  },
+  {
+    "scenario":"median_keep_outliers",
+    "n":250,
+    "mae":0.0075743702,
+    "rmse":0.0101852923,
+    "delta_mae":0.0000810977
+  }
+]
